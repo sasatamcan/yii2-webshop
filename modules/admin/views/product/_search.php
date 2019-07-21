@@ -25,7 +25,9 @@ use yii\widgets\ActiveForm;
 
     <?= $form->field($model, 'image') ?>
 
-    <?php // echo $form->field($model, 'viewed') ?>
+    <?= $form->field($model, 'date') ?>
+
+    <?php // echo $form->field($model, 'saled') ?>
 
     <?php // echo $form->field($model, 'user_id') ?>
 

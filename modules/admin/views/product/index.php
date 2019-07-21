@@ -30,6 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'name',
             'content:ntext',
             'price',
+            'date',
 //            'image',
             [
                 'format'=>'html',

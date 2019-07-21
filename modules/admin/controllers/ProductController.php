@@ -183,7 +183,7 @@ class ProductController extends Controller
         }
 
         return $this->render('atributes', [
-            'selectedAtributes'=>$selectedAtributes,
+            'selectedAtributes' =>$selectedAtributes,
             'atributes' => $atributes
         ]);
     }

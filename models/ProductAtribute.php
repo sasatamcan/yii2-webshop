@@ -63,4 +63,8 @@ class ProductAtribute extends \yii\db\ActiveRecord
     {
         return $this->hasOne(Atribute::className(), ['id' => 'atribute_id']);
     }
+    public static function getAtributeById($id)
+    {
+        return Atribute::find()->where(['id'=>$id])->one();
+    }
 }

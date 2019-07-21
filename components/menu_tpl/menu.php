@@ -3,7 +3,7 @@ use yii\helpers\Url;
 ?>
 
 <li class="dropdown menu__item">
-    <a href="<?= Url::to(['category/view', 'id'=> $category['id']])?>" class="dropdown-toggle menu__link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+    <a href="<?= Url::to(['category/index', 'id'=> $category['id']])?>" class="dropdown-toggle menu__link"  >
         <?= $category['name'] ?>
         <?php if( isset($category['childs'])):?>
             <span class="caret"></span>
