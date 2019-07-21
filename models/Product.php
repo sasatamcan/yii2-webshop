@@ -148,5 +148,17 @@ class Product extends \yii\db\ActiveRecord
     {
         return Product::find()->orderBy('date asc')->limit(4)->all();
     }
-
+    public function saveProduct()
+    {
+        $this->user_id = Yii::$app->user->id;
+        return $this->save();
+    }
+    public function getComments()
+    {
+        return $this->hasMany(Comment::className(), ['product_id' => 'id']);
+    }
+    public function getProductComments()
+    {
+        return $this->getComments()->where(['status'=>1])->all();
+    }
 }

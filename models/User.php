@@ -84,8 +84,9 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
     }
     public function getImage()
     {
-        return $this->photo;
+        return ($this->photo) ? '/web/uploads/' .$this->photo : 'https://zenit.org/wp-content/uploads/2018/05/no-image-icon.png';
     }
+
 
 }
 

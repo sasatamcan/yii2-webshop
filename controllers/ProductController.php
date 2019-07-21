@@ -3,6 +3,7 @@
 namespace app\controllers;
 
 use app\models\Atribute;
+use app\models\CommentForm;
 use Yii;
 use yii\filters\AccessControl;
 use yii\web\Controller;
@@ -60,10 +61,15 @@ class ProductController extends Controller
         $product = Product::findOne($id);
         $latest = Product::getLatest();
         $atributes = Atribute::getAll($id);
+        $comments = $product->getProductComments();
+        $commentForm = new CommentForm();
         return $this->render('single',[
             'product'=>$product,
             'latest'=>$latest,
-            'atributes'=>$atributes
+            'atributes'=>$atributes,
+            'comments'=>$comments,
+            'commentForm'=>$commentForm,
         ]);
     }
+
 }

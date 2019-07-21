@@ -11,6 +11,7 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
+use app\models\CommentForm;
 
 class SiteController extends Controller
 {
@@ -104,6 +105,18 @@ class SiteController extends Controller
     {
         return $this->render('category');
     }
-
+    public function actionComment($id)
+    {
+        $model = new CommentForm();
+        if(Yii::$app->request->isPost)
+        {
+            $model->load(Yii::$app->request->post());
+            if($model->saveComment($id))
+            {
+                Yii::$app->getSession()->setFlash('comment', 'Your comment will be added soon!');
+                return $this->redirect(['product/single','id'=>$id]);
+            }
+        }
+    }
 
 }
