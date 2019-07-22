@@ -387,6 +387,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         speed: 300
     });
 </script>
+<script>
+    $('.add-to-cart').on('click', function (e) {
+    e.preventDefault();
+    var id = $(this).data('id');
+    $.ajax({
+    url: '/cart/add',
+    data: {id: id},
+    type: 'GET',
+    success: function(res){
+    if(!res) alert('Ошибка!');
+    console.log(res);
+    //showCart(res);
+    },
+    error: function(){
+    alert('Error!');
+    }
+    });
+    });
+</script>
 <!-- //stats -->
 <!-- start-smoth-scrolling -->
 <script type="text/javascript" src="/public/js/move-top.js"></script>
