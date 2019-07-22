@@ -83,24 +83,14 @@ use app\models\Atribute;
                 </div>
                 <div class="clearfix"> </div>
             </div>
-            <div class="occasion-cart">
-                <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
-                    <form action="#" method="post">
-                        <fieldset>
-                            <input type="hidden" name="cmd" value="_cart">
-                            <input type="hidden" name="add" value="1">
-                            <input type="hidden" name="business" value=" ">
-                            <input type="hidden" name="item_name" value="Wing Sneakers">
-                            <input type="hidden" name="amount" value="650.00">
-                            <input type="hidden" name="discount_amount" value="1.00">
-                            <input type="hidden" name="currency_code" value="USD">
-                            <input type="hidden" name="return" value=" ">
-                            <input type="hidden" name="cancel_return" value=" ">
-                            <input type="submit" name="submit" value="Add to cart" class="button">
-                        </fieldset>
-                    </form>
-                </div>
+            <div class="">
+                <label>Quantity:</label>
+                <input type="text" value="1" id="qty" />
 
+                    <a href="<?= \yii\helpers\Url::to(['cart/add', 'id' => $product->id])?>" data-id="<?= $product->id?>" class="btn btn-fefault add-to-cart cart">
+                        <i class="fa fa-shopping-cart"></i>
+                        Add to cart
+                    </a>
             </div>
             <ul class="social-nav model-3d-0 footer-social w3_agile_social single_page_w3ls">
                 <li class="share">Share On : </li>
@@ -180,22 +170,7 @@ use app\models\Atribute;
                             <div class="info-product-price">
                                 <span class="item_price">$<?= $last->price;?></span>
                             </div>
-                            <div class="snipcart-details top_brand_home_details item_add single-item hvr-outline-out button2">
-                                <form action="#" method="post">
-                                    <fieldset>
-                                        <input type="hidden" name="cmd" value="_cart">
-                                        <input type="hidden" name="add" value="1">
-                                        <input type="hidden" name="business" value=" ">
-                                        <input type="hidden" name="item_name" value="Sleeveless Solid Blue Top">
-                                        <input type="hidden" name="amount" value="30.99">
-                                        <input type="hidden" name="discount_amount" value="1.00">
-                                        <input type="hidden" name="currency_code" value="USD">
-                                        <input type="hidden" name="return" value=" ">
-                                        <input type="hidden" name="cancel_return" value=" ">
-                                        <input type="submit" name="submit" value="Add to cart" class="button">
-                                    </fieldset>
-                                </form>
-                            </div>
+                            <a href="<?= Url::toRoute(['cart/add', 'id'=>$last->id])?>" data-id="<?= $last->id?>" class="btn btn-default add-to-cart" ><i class="fa fa-shopping-cart"></i>Add to cart</a>
 
                         </div>
                     </div>

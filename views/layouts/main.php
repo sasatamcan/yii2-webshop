@@ -267,7 +267,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     'id' => 'cart',
     'size' => 'modal-lg',
     'footer' => '<button type="button" class="btn btn-default" data-dismiss="modal">Продолжить покупки</button>
-        <button type="button" class="btn btn-success">Оформить заказ</button>
+        <a href="' . \yii\helpers\Url::to(['cart/view']) . '" class="btn btn-success">Оформить заказ</a>
         <button type="button" class="btn btn-danger" onclick="clearCart()">Очистить корзину</button>'
 ]);
 
@@ -388,10 +388,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     $('.add-to-cart').on('click', function (e) {
     e.preventDefault();
-    var id = $(this).data('id');
+    var id = $(this).data('id'),
+        qty = $('#qty').val();
     $.ajax({
     url: '/cart/add',
-    data: {id: id},
+    data: {id: id, qty: qty},
     type: 'GET',
     success: function(res){
     if(!res) alert('Ошибка!');
