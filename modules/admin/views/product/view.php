@@ -39,8 +39,14 @@ $this->params['breadcrumbs'][] = $this->title;
             'image',
             'date',
             'saled',
-            'user_id',
-            'status',
+//            'user_id',
+            [
+                'attribute' => 'status',
+                'value' => function($data){
+                    return !$data->status ? '<span class="text-danger">Не активен</span>' : '<span class="text-success">Активен</span>';
+                },
+                'format' => 'html',
+            ],
             'category_id',
         ],
     ]) ?>

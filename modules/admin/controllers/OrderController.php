@@ -38,7 +38,7 @@ class OrderController extends Controller
         $dataProvider = new ActiveDataProvider([
             'query' => Order::find(),
             'pagination' => [
-                'pageSize' => 2
+                'pageSize' => 3
             ],
             'sort' => [
                 'defaultOrder' => [

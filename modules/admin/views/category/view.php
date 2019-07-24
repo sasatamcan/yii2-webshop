@@ -33,7 +33,7 @@ $this->params['breadcrumbs'][] = $this->title;
             'meta_title',
             'name',
             'description',
-            'parent_id',
+//            'parent_id',
         ],
     ]) ?>
 
