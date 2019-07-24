@@ -58,6 +58,8 @@ $config = [
      'modules' => [
         'admin' => [
             'class' => 'app\modules\admin\Module',
+//            'layout' => 'admin',
+            'defaultRoute' => 'order/index',
         ],
     ],
     'params' => $params,

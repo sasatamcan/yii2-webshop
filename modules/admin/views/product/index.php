@@ -39,6 +39,13 @@ $this->params['breadcrumbs'][] = $this->title;
                     return Html::img($data->getImage(), ['width'=>200]);
                 }
             ],
+            [
+                'attribute' => 'status',
+                'value' => function($data){
+                    return !$data->status ? '<span class="text-danger">Не активен</span>' : '<span class="text-success">Активен</span>';
+                },
+                'format' => 'html',
+            ],
             //'viewed',
             //'user_id',
             //'status',
