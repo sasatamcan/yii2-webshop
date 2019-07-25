@@ -4,14 +4,14 @@ use app\models\Atribute;
 ?>
 <div class="page-head_agile_info_w3l">
     <div class="container">
-        <h3>Single <span>Page </span></h3>
+        <h3><?= $product->name;?></h3>
         <!--/w3_short-->
         <div class="services-breadcrumb">
             <div class="agile_inner_breadcrumb">
 
                 <ul class="w3_short">
                     <li><a href="/">Home</a><i>|</i></li>
-                    <li>Single Page</li>
+                    <li><?= $product->name;?></li>
                 </ul>
             </div>
         </div>
@@ -52,13 +52,6 @@ use app\models\Atribute;
 							<label for="rating1">1</label>
 						</span>
             </div>
-            <div class="description">
-                <h5>Check delivery, payment options and charges at your location</h5>
-                <form action="#" method="post">
-                    <input type="text" value="Enter pincode" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter pincode';}" required="">
-                    <input type="submit" value="Check">
-                </form>
-            </div>
             <div class="color-quality">
                 <div class="color-quality-right">
                     <ul>
@@ -69,19 +62,6 @@ use app\models\Atribute;
                         <? endforeach;?>
                     </ul>
                 </div>
-            </div>
-            <div class="occasional">
-                <h5>Types :</h5>
-                <div class="colr ert">
-                    <label class="radio"><input type="radio" name="radio" checked=""><i></i>Casual Shoes</label>
-                </div>
-                <div class="colr">
-                    <label class="radio"><input type="radio" name="radio"><i></i>Sneakers </label>
-                </div>
-                <div class="colr">
-                    <label class="radio"><input type="radio" name="radio"><i></i>Formal Shoes</label>
-                </div>
-                <div class="clearfix"> </div>
             </div>
             <div class="">
                 <label>Quantity:</label>
@@ -94,14 +74,14 @@ use app\models\Atribute;
             </div>
             <ul class="social-nav model-3d-0 footer-social w3_agile_social single_page_w3ls">
                 <li class="share">Share On : </li>
-                <li><a href="#" class="facebook">
+                <li><a href="https://www.facebook.com/ithub.com.ua/" class="facebook">
                         <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
                         <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div></a></li>
                 <li><a href="#" class="twitter">
                         <div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
                         <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div></a></li>
-                <li><a href="#" class="instagram">
-                        <div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                <li><a href="https://www.youtube.com/channel/UCn0Sm-0X6CNVDVkcYTJvktw" class="instagram">
+                        <div class="front"><i class="fa fa-youtube-play " aria-hidden="true"></i></div>
                         <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div></a></li>
                 <li><a href="#" class="pinterest">
                         <div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
@@ -192,7 +172,7 @@ use app\models\Atribute;
                 </div>
                 <div class="w3layouts_mail_grid_left2">
                     <h3>FREE SHIPPING</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                    <p>Free delivery in Zhytomyr</p>
                 </div>
             </div>
             <div class="col-md-3 w3layouts_mail_grid_left">
@@ -201,7 +181,7 @@ use app\models\Atribute;
                 </div>
                 <div class="w3layouts_mail_grid_left2">
                     <h3>24/7 SUPPORT</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                    <p>You can contact us at any time</p>
                 </div>
             </div>
             <div class="col-md-3 w3layouts_mail_grid_left">
@@ -210,7 +190,7 @@ use app\models\Atribute;
                 </div>
                 <div class="w3layouts_mail_grid_left2">
                     <h3>MONEY BACK GUARANTEE</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                    <p>We will refund your money if you return the purchase</p>
                 </div>
             </div>
             <div class="col-md-3 w3layouts_mail_grid_left">
@@ -219,120 +199,11 @@ use app\models\Atribute;
                 </div>
                 <div class="w3layouts_mail_grid_left2">
                     <h3>FREE GIFT COUPONS</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                    <p>Receive your gift today</p>
                 </div>
             </div>
             <div class="clearfix"> </div>
         </div>
 
-    </div>
-</div>
-<!--grids-->
-<!-- footer -->
-<div class="footer">
-    <div class="footer_agile_inner_info_w3l">
-        <div class="col-md-3 footer-left">
-            <h2><a href="index.html"><span>E</span>lite Shoppy </a></h2>
-            <p>Lorem ipsum quia dolor
-                sit amet, consectetur, adipisci velit, sed quia non
-                numquam eius modi tempora.</p>
-            <ul class="social-nav model-3d-0 footer-social w3_agile_social two">
-                <li><a href="#" class="facebook">
-                        <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
-                        <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div></a></li>
-                <li><a href="#" class="twitter">
-                        <div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
-                        <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div></a></li>
-                <li><a href="#" class="instagram">
-                        <div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
-                        <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div></a></li>
-                <li><a href="#" class="pinterest">
-                        <div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                        <div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div></a></li>
-            </ul>
-        </div>
-        <div class="col-md-9 footer-right">
-            <div class="sign-grds">
-                <div class="col-md-4 sign-gd">
-                    <h4>Our <span>Information</span> </h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="mens.html">Men's Wear</a></li>
-                        <li><a href="womens.html">Women's wear</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="typography.html">Short Codes</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-5 sign-gd-two">
-                    <h4>Store <span>Information</span></h4>
-                    <div class="w3-address">
-                        <div class="w3-address-grid">
-                            <div class="w3-address-left">
-                                <i class="fa fa-phone" aria-hidden="true"></i>
-                            </div>
-                            <div class="w3-address-right">
-                                <h6>Phone Number</h6>
-                                <p>+1 234 567 8901</p>
-                            </div>
-                            <div class="clearfix"> </div>
-                        </div>
-                        <div class="w3-address-grid">
-                            <div class="w3-address-left">
-                                <i class="fa fa-envelope" aria-hidden="true"></i>
-                            </div>
-                            <div class="w3-address-right">
-                                <h6>Email Address</h6>
-                                <p>Email :<a href="mailto:example@email.com"> mail@example.com</a></p>
-                            </div>
-                            <div class="clearfix"> </div>
-                        </div>
-                        <div class="w3-address-grid">
-                            <div class="w3-address-left">
-                                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                            </div>
-                            <div class="w3-address-right">
-                                <h6>Location</h6>
-                                <p>Broome St, NY 10002,California, USA.
-
-                                </p>
-                            </div>
-                            <div class="clearfix"> </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 sign-gd flickr-post">
-                    <h4>Flickr <span>Posts</span></h4>
-                    <ul>
-                        <li><a href="single.html"><img src="/public/image/t1.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="/public/image/t2.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="/public/image/t3.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="/public/image/t4.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="/public/image/t1.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="/public/image/t2.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="/public/image/t3.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="/public/image/t2.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="/public/image/t4.jpg" alt=" " class="img-responsive" /></a></li>
-                    </ul>
-                </div>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-        <div class="clearfix"></div>
-        <div class="agile_newsletter_footer">
-            <div class="col-sm-6 newsleft">
-                <h3>SIGN UP FOR NEWSLETTER !</h3>
-            </div>
-            <div class="col-sm-6 newsright">
-                <form action="#" method="post">
-                    <input type="email" placeholder="Enter your email..." name="email" required="">
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-
-            <div class="clearfix"></div>
-        </div>
-        <p class="copy-right">&copy 2017 Elite shoppy. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
     </div>
 </div>

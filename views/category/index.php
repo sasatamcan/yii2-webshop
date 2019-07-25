@@ -10,7 +10,7 @@ use yii\helpers\Url;
             <div class="agile_inner_breadcrumb">
 
                 <ul class="w3_short">
-                    <li><a href=".">Home</a><i>|</i></li>
+                    <li><a href="/">Home</a><i>|</i></li>
                     <li><?= $category->name;?></li>
                 </ul>
             </div>
@@ -75,7 +75,7 @@ use yii\helpers\Url;
                 </div>
                 <div class="w3layouts_mail_grid_left2">
                     <h3>FREE SHIPPING</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                    <p>Free delivery in Zhytomyr</p>
                 </div>
             </div>
             <div class="col-md-3 w3layouts_mail_grid_left">
@@ -84,7 +84,7 @@ use yii\helpers\Url;
                 </div>
                 <div class="w3layouts_mail_grid_left2">
                     <h3>24/7 SUPPORT</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                    <p>You can contact us at any time</p>
                 </div>
             </div>
             <div class="col-md-3 w3layouts_mail_grid_left">
@@ -93,7 +93,7 @@ use yii\helpers\Url;
                 </div>
                 <div class="w3layouts_mail_grid_left2">
                     <h3>MONEY BACK GUARANTEE</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                    <p>We will refund your money if you return the purchase</p>
                 </div>
             </div>
             <div class="col-md-3 w3layouts_mail_grid_left">
@@ -102,7 +102,7 @@ use yii\helpers\Url;
                 </div>
                 <div class="w3layouts_mail_grid_left2">
                     <h3>FREE GIFT COUPONS</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur</p>
+                    <p>Receive your gift today</p>
                 </div>
             </div>
             <div class="clearfix"> </div>

@@ -1,24 +1,57 @@
+<?
+use yii\helpers\Url;
 
-<!-- /banner_bottom_agile_info -->
+?>
+<!-- //banner -->
 <div class="banner_bottom_agile_info">
     <div class="container">
-        <div class="agile_ab_w3ls_info">
-            <div class="col-md-6 ab_pic_w3ls">
-                <img src="/web/public/image/ab_pic.jpg" alt=" " class="img-responsive" />
+        <div class="banner_bottom_agile_info_inner_w3ls">
+            <div class="col-md-6 wthree_banner_bottom_grid_three_left1 grid">
+                <figure class="effect-roxy">
+                    <img src="public/image/bottom1.jpg" alt=" " class="img-responsive" />
+                    <figcaption>
+                    </figcaption>
+                </figure>
             </div>
-            <div class="col-md-6 ab_pic_w3ls_text_info">
-                <h5>About Our Elite <span> Shoppy</span> </h5>
-                <p>OUR MISSION
-                    Develop a successful business, always offering customers an optimal range of quality products for sports, tourism and active recreation with an optimal level of service and in accordance with the changing needs of customers.
-                    </p>
-                <p>Contribute to the improvement of the nation by promoting the values ​​of a healthy lifestyle, sports, tourism and active recreation, improving the quality of life of our customers.</p>
+            <div class="col-md-6 wthree_banner_bottom_grid_three_left1 grid">
+                <figure class="effect-roxy">
+                    <img src="public/image/bottom2.jpg" alt=" " class="img-responsive" />
+                    <figcaption>
+                    </figcaption>
+                </figure>
             </div>
             <div class="clearfix"></div>
         </div>
     </div>
 </div>
-<!-- team -->
+<!-- //schedule-bottom -->
+<!-- banner-bootom-w3-agileits -->
+<!---->
+<!--/grids-->
+<?php if(!empty($popular)):?>
+    <div class="banner-bootom-w3-agileits">
+        <div class="container">
+            <h3 class="wthree_text_info">What's <span>Top Selling</span></h3>
+            <div class="agile_last_double_sectionw3ls">
+                <? foreach($popular as $pop):?>
+                    <div class="col-md-6 multi-gd-img multi-gd-text ">
+                        <a href="<?= Url::toRoute(['product/single', 'id'=>$pop->id])?>"><img src="<?= $pop->getImage();?>" alt=" ">
+                            <h4>Price <span><?= $pop->price;?></span> $</h4></a>
+                    </div>
+                <? endforeach;?>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+<?php endif;?>
 
+<!-- /we-offer -->
+<div class="sale-w3ls">
+    <div class="container">
+    </div>
+</div>
+<!-- //we-offer -->
+<!--/grids-->
 <div class="coupons">
     <div class="coupons-grids text-center">
         <div class="w3layouts_mail_grid">
@@ -63,5 +96,3 @@
 
     </div>
 </div>
-<!--grids-->
-<!-- footer -->

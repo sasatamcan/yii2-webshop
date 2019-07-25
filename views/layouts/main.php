@@ -74,7 +74,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header-bot">
     <div class="header-bot_inner_wthreeinfo_header_mid">
         <div class="col-md-4 header-middle">
-            <form action="#" method="post">
+            <form action="#" method="get">
                 <input type="search" name="search" placeholder="Search here..." required="">
                 <input type="submit" value=" ">
                 <div class="clearfix"></div>
@@ -156,23 +156,21 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="footer">
     <div class="footer_agile_inner_info_w3l">
         <div class="col-md-3 footer-left">
-            <h2><a href="index.html"><span>E</span>lite Shoppy </a></h2>
-            <p>Lorem ipsum quia dolor
-                sit amet, consectetur, adipisci velit, sed quia non
-                numquam eius modi tempora.</p>
+            <h2><a href="/"><span>E</span>lite Shoppy </a></h2>
+            <p>
+                Develop a successful business, always offering customers an optimal range of quality products
+                for sports, tourism and active recreation with an optimal level of service and in accordance with the
+                changing needs of customers..</p>
             <ul class="social-nav model-3d-0 footer-social w3_agile_social two">
-                <li><a href="#" class="facebook">
+                <li><a href="https://www.facebook.com/ithub.com.ua/" class="facebook">
                         <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
                         <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div></a></li>
                 <li><a href="#" class="twitter">
                         <div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
                         <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div></a></li>
-                <li><a href="#" class="instagram">
-                        <div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                <li><a href="https://www.youtube.com/channel/UCn0Sm-0X6CNVDVkcYTJvktw" class="instagram">
+                        <div class="front"><i class="fa fa-youtube-play " aria-hidden="true"></i></div>
                         <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div></a></li>
-                <li><a href="#" class="pinterest">
-                        <div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                        <div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div></a></li>
             </ul>
         </div>
         <div class="col-md-9 footer-right">
@@ -181,10 +179,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <h4>Our <span>Information</span> </h4>
                     <ul>
                         <li><a href="/">Home</a></li>
-                        <li><a href="mens.html">Men's Wear</a></li>
-                        <li><a href="womens.html">Women's wear</a></li>
                         <li><a href="site/about">About</a></li>
-                        <li><a href="typography.html">Short Codes</a></li>
                         <li><a href="site/contact">Contact</a></li>
                     </ul>
                 </div>
@@ -218,7 +213,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             </div>
                             <div class="w3-address-right">
                                 <h6>Location</h6>
-                                <p>Broome St, NY 10002,California, USA.
+                                <p>Zhytomyr, Victory Square, 10.
 
                                 </p>
                             </div>
@@ -226,52 +221,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 sign-gd flickr-post">
-                    <h4>Flickr <span>Posts</span></h4>
-                    <ul>
-                        <li><a href="single.html"><img src="/public/image/t1.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="/public/image/t2.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="/public/image/t3.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="/public/image/t4.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="/public/image/t1.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="/public/image/t2.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="/public/image/t3.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="/public/image/t2.jpg" alt=" " class="img-responsive" /></a></li>
-                        <li><a href="single.html"><img src="/public/image/t4.jpg" alt=" " class="img-responsive" /></a></li>
-                    </ul>
-                </div>
+
                 <div class="clearfix"></div>
             </div>
         </div>
         <div class="clearfix"></div>
-        <div class="agile_newsletter_footer">
-            <div class="col-sm-6 newsleft">
-                <h3>SIGN UP FOR NEWSLETTER !</h3>
-            </div>
-            <div class="col-sm-6 newsright">
-                <form action="#" method="post">
-                    <input type="email" placeholder="Enter your email..." name="email" required="">
-                    <input type="submit" value="Submit">
-                </form>
-            </div>
-
-            <div class="clearfix"></div>
-        </div>
-        <p class="copy-right">&copy 2017 Elite shoppy. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a></p>
+        <p class="copy-right">&copy 2019 Elite shoppy. All rights reserved | Design by <a href="http://w3layouts.com/">W3layouts</a>  |
+            Developed by OlEkSaNdRaTmCn</p>
     </div>
 </div>
 <!-- //footer -->
 <?php
-//\yii\bootstrap\Modal::begin([
-//    'header' => '<h2>Корзина</h2>',
-//    'id' => 'cart',
-//    'size' => 'modal-lg',
-//    'footer' => '<button type="button" class="btn btn-default" data-dismiss="modal">Продолжить покупки</button>
-//        <a href="' . \yii\helpers\Url::to(['cart/view']) . '" class="btn btn-success">Оформить заказ</a>
-//        <button type="button" class="btn btn-danger" onclick="clearCart()">Очистить корзину</button>'
-//]);
-//
-//\yii\bootstrap\Modal::end();
+\yii\bootstrap\Modal::begin([
+    'header' => '<h2>Корзина</h2>',
+    'id' => 'cart',
+    'size' => 'modal-lg',
+    'footer' => '<button type="button" class="btn btn-default" data-dismiss="modal">Продолжить покупки</button>
+        <a href="' . \yii\helpers\Url::to(['cart/view']) . '" class="btn btn-success">Оформить заказ</a>
+        <button type="button" class="btn btn-danger" onclick="clearCart()">Очистить корзину</button>'
+]);
+
+\yii\bootstrap\Modal::end();
 //?>
 
 <!-- login -->
@@ -432,6 +402,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
     });
 </script>
+<style>
+    .navbar-default {
+        background: black !important;
+        border: none !important;
+
+    }
+</style>
 <!-- //here ends scrolling icon -->
 
 
