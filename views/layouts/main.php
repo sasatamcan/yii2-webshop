@@ -74,32 +74,29 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div class="header-bot">
     <div class="header-bot_inner_wthreeinfo_header_mid">
         <div class="col-md-4 header-middle">
-            <form action="#" method="get">
-                <input type="search" name="search" placeholder="Search here..." required="">
+            <form method="get" action="<?= \yii\helpers\Url::to(['search'])?>">
+                <input type="search" name="q" placeholder="Search here..." required="">
                 <input type="submit" value=" ">
                 <div class="clearfix"></div>
             </form>
         </div>
         <!-- header-bot -->
         <div class="col-md-4 logo_agile">
-            <h1><a href="index.html"><span>E</span>lite Shoppy <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
+            <h1><a href="/"><span>E</span>lite Shoppy <i class="fa fa-shopping-bag top_logo_agile_bag" aria-hidden="true"></i></a></h1>
         </div>
         <!-- header-bot -->
         <div class="col-md-4 agileits-social top_content">
             <ul class="social-nav model-3d-0 footer-social w3_agile_social">
                 <li class="share">Share On : </li>
-                <li><a href="#" class="facebook">
+                <li><a href="https://www.facebook.com/ithub.com.ua/" class="facebook">
                         <div class="front"><i class="fa fa-facebook" aria-hidden="true"></i></div>
                         <div class="back"><i class="fa fa-facebook" aria-hidden="true"></i></div></a></li>
                 <li><a href="#" class="twitter">
                         <div class="front"><i class="fa fa-twitter" aria-hidden="true"></i></div>
                         <div class="back"><i class="fa fa-twitter" aria-hidden="true"></i></div></a></li>
-                <li><a href="#" class="instagram">
-                        <div class="front"><i class="fa fa-instagram" aria-hidden="true"></i></div>
+                <li><a href="https://www.youtube.com/channel/UCn0Sm-0X6CNVDVkcYTJvktw" class="instagram">
+                        <div class="front"><i class="fa fa-youtube-play " aria-hidden="true"></i></div>
                         <div class="back"><i class="fa fa-instagram" aria-hidden="true"></i></div></a></li>
-                <li><a href="#" class="pinterest">
-                        <div class="front"><i class="fa fa-linkedin" aria-hidden="true"></i></div>
-                        <div class="back"><i class="fa fa-linkedin" aria-hidden="true"></i></div></a></li>
             </ul>
 
 
@@ -233,12 +230,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- //footer -->
 <?php
 \yii\bootstrap\Modal::begin([
-    'header' => '<h2>Корзина</h2>',
+    'header' => '<h2>Cart</h2>',
     'id' => 'cart',
     'size' => 'modal-lg',
-    'footer' => '<button type="button" class="btn btn-default" data-dismiss="modal">Продолжить покупки</button>
-        <a href="' . \yii\helpers\Url::to(['cart/view']) . '" class="btn btn-success">Оформить заказ</a>
-        <button type="button" class="btn btn-danger" onclick="clearCart()">Очистить корзину</button>'
+    'footer' => '<button type="button" class="btn btn-default" data-dismiss="modal">Continue shopping</button>
+        <a href="' . \yii\helpers\Url::to(['cart/view']) . '" class="btn btn-success">Checkout</a>
+        <button type="button" class="btn btn-danger" onclick="clearCart()">Empty trash</button>'
 ]);
 
 \yii\bootstrap\Modal::end();

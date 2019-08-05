@@ -33,7 +33,6 @@ use yii\helpers\Url;
             </div>
 
         <div class="w3_agile_latest_arrivals">
-            <h3 class="wthree_text_info">Featured <span>Arrivals</span></h3>
             <?foreach($products as $product):?>
                 <div class="col-md-3 product-men single">
                     <div class="men-pro-item simpleCart_shelfItem">

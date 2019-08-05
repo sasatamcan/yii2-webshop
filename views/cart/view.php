@@ -23,11 +23,11 @@ use yii\widgets\ActiveForm;
             <table class="table table-hover table-striped">
                 <thead>
                 <tr>
-                    <th>Фото</th>
-                    <th>Наименование</th>
-                    <th>Кол-во</th>
-                    <th>Цена</th>
-                    <th>Сумма</th>
+                    <th>Photo</th>
+                    <th>Name</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                    <th>Sum</th>
                     <th><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></th>
                 </tr>
                 </thead>
@@ -43,12 +43,12 @@ use yii\widgets\ActiveForm;
                     </tr>
                 <?php endforeach?>
                 <tr>
-                    <td colspan="5">Итого: </td>
+                    <td colspan="5">Total: </td>
                     <td><?= $session['cart.qty']?></td>
                 </tr>
                 <tr>
-                    <td colspan="5">На сумму: </td>
-                    <td><?= $session['cart.sum']?></td>
+                    <td colspan="5">Total amount : </td>
+                    <td><?= $session['cart.sum']?> $</td>
                 </tr>
                 </tbody>
             </table>
@@ -59,9 +59,9 @@ use yii\widgets\ActiveForm;
         <?= $form->field($order, 'email')?>
         <?= $form->field($order, 'phone')?>
         <?= $form->field($order, 'address')?>
-        <?= Html::submitButton('Заказать', ['class' => 'btn btn-success'])?>
+        <?= Html::submitButton('To order', ['class' => 'btn btn-success'])?>
         <?php ActiveForm::end()?>
     <?php else: ?>
-        <h3>Корзина пуста</h3>
+        <h3>Cart empty</h3>
     <?php endif;?>
 </div>

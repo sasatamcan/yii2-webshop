@@ -2,55 +2,54 @@
 use yii\helpers\Url;
 
 ?>
-<!-- //banner -->
-<div class="banner_bottom_agile_info">
+
+<!-- banner-bootom-w3-agileits -->
+<div class="banner-bootom-w3-agileits">
     <div class="container">
-        <div class="banner_bottom_agile_info_inner_w3ls">
-            <div class="col-md-6 wthree_banner_bottom_grid_three_left1 grid">
-                <figure class="effect-roxy">
-                    <img src="public/image/bottom1.jpg" alt=" " class="img-responsive" />
-                    <figcaption>
-                    </figcaption>
-                </figure>
-            </div>
-            <div class="col-md-6 wthree_banner_bottom_grid_three_left1 grid">
-                <figure class="effect-roxy">
-                    <img src="public/image/bottom2.jpg" alt=" " class="img-responsive" />
-                    <figcaption>
-                    </figcaption>
-                </figure>
+
+        <div class="men-wear-bottom">
+            <div class="col-sm-8 men-wear-right">
+                <h4>Search by request <?= $q?></h4>
             </div>
             <div class="clearfix"></div>
         </div>
-    </div>
-</div>
-<!-- //schedule-bottom -->
-<!-- banner-bootom-w3-agileits -->
-<!---->
-<!--/grids-->
-<?php if(!empty($popular)):?>
-    <div class="banner-bootom-w3-agileits">
-        <div class="container">
-            <h3 class="wthree_text_info">What's <span>Top Selling</span></h3>
-            <div class="agile_last_double_sectionw3ls">
-                <? foreach($popular as $pop):?>
-                    <div class="col-md-6 multi-gd-img multi-gd-text ">
-                        <a href="<?= Url::toRoute(['product/single', 'id'=>$pop->id])?>"><img src="<?= $pop->getImage();?>" alt=" ">
-                            <h4>Price <span><?= $pop->price;?></span> $</h4></a>
-                    </div>
-                <? endforeach;?>
-                <div class="clearfix"></div>
-            </div>
-        </div>
-    </div>
-<?php endif;?>
 
-<!-- /we-offer -->
-<div class="sale-w3ls">
-    <div class="container">
+        <div class="w3_agile_latest_arrivals">
+            <?php if(!empty($products)): ?>
+            <?foreach($products as $product):?>
+                <div class="col-md-3 product-men single">
+                    <div class="men-pro-item simpleCart_shelfItem">
+                        <div class="men-thumb-item">
+<!--                            <img src="--><?//= $product->getImage();?><!--" alt="" class="pro-image-front">-->
+<!--                            <img src="--><?//= $product->getImage();?><!--" alt="" class="pro-image-back">-->
+                            <div class="men-cart-pro">
+                                <div class="inner-men-cart-pro">
+                                    <a href="<?= Url::toRoute(['product/single', 'id'=>$product->id])?>" class="link-product-add-cart">Quick View</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="item-info-product ">
+                            <h4><a href="<?= Url::toRoute(['product/single', 'id'=>$product->id])?>"><?= $product->name;?></a></h4>
+                            <div class="info-product-price">
+                                <span class="item_price">$<?= $product->price;?></span>
+                            </div>
+                            <a href="<?= Url::toRoute(['cart/add', 'id'=>$product->id])?>" data-id="<?= $product->id?>" class="btn btn-default add-to-cart" ><i class="fa fa-shopping-cart"></i>Add to cart</a>
+
+                        </div>
+                    </div>
+                </div>
+            <? endforeach;?>
+            <?php else :?>
+                <h2>Nothing found...</h2>
+            <?php endif;?>
+            <div class="clearfix"> </div>
+            <!--//slider_owl-->
+        </div>
+
     </div>
 </div>
-<!-- //we-offer -->
+<!-- //mens -->
 <!--/grids-->
 <div class="coupons">
     <div class="coupons-grids text-center">
@@ -96,3 +95,4 @@ use yii\helpers\Url;
 
     </div>
 </div>
+
